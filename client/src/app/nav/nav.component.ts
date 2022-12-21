@@ -28,7 +28,6 @@ export class NavComponent implements OnInit, OnDestroy {
         this.router.navigateByUrl('/members');
         this.toastr.success('Logged In Successfully');
       },
-      error: (error) => this.toastr.error(error.error),
       complete: () => console.log('Loged In'),
     });
   }
